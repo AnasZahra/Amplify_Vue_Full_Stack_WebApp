@@ -5,7 +5,6 @@
 
     <router-view />
 
-    <Authenticator/>
     
     <section class="solid" id="login">
       <div>
@@ -17,6 +16,14 @@
         <a href="#projects" class="main-btn-in">Log in</a>
       </div>
     </section>
+
+    <Authenticator> 
+      <template> 
+        <button @click="signOut">Sign Out</button>
+      </template>
+    </Authenticator>
+    
+    
 
     <Footer></Footer>
 
