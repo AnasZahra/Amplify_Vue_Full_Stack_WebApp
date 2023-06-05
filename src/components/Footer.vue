@@ -22,4 +22,34 @@ export default {
 <style>
 @import "@/assets/base.css";
 /* Add styles for your footer component */
+
+.icon{
+    color: #AB82FF;
+    font-size: 5em ;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #AB82FF;
+    font: size 1.2em; 
+    font-weight: 700;
+    margin: 10px;
+}
+.footer{
+    background-color: #AB82FF;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-title{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
 </style>

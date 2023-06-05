@@ -28,7 +28,7 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import {Authenticator} from "@aws-amplify/ui-vue";
+import {Authenticator} from "@aws-amplify/ui-vue"
 
 export default {
   name: "ProfilePage",
@@ -49,7 +49,7 @@ export default {
 
 <style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-@import "@/assets/base.css";
+@import url("./src/assets/base.css");
 
 
 .Log_in {

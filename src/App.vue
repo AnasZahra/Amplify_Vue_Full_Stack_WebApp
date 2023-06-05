@@ -4,7 +4,6 @@
 
     <router-view />
 
-    <Authenticator/>
 
     <section class="main" id="Home">
       <div>
@@ -55,17 +54,16 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import {Authenticator} from "@aws-amplify/ui-vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    Authenticator,
   },
 };
 </script>
+
 
 <style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");

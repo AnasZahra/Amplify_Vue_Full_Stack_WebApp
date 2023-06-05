@@ -1,15 +1,19 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-import awsConfig from "./aws-exports";
-import Auth from 'aws-amplify'; 
+import './assets/main.css'
 
-import "@aws-amplify/ui-vue/styles.css";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import awsConfig from "./aws-exports"
+import { Auth } from 'aws-amplify'
+import "@aws-amplify/ui-vue/styles.css"
 
-Auth.configure(awsConfig); 
+Auth.configure(awsConfig)
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.use(router);
+app.use(router)
 
-app.mount('#app');
+app.mount('#app')
+
+
+

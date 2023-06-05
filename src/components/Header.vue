@@ -20,4 +20,47 @@ export default {
 @import "@/assets/base.css";
 
 /* Add styles for your header component */
+
+* {
+  font-family: 'Visby CF', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 26px 100px ;
+    backdrop-filter: blur(4px);
+    
+}
+
+.logo{
+    text-decoration:none ;
+    color:#8665c7 ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font: weight 100; ;
+    font-size: 3em;
+
+}
+
+.navigation a{
+    color: #5f0fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 40px ;
+
+}
+.navigation a:hover{
+    color: #2e2938;
+}
+
 </style>
