@@ -9,6 +9,8 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "@aws-amplify/ui-vue": "^3.1.18",
+    "aws-amplify": "^5.2.4",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
