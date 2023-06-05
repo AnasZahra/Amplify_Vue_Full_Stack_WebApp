@@ -17,7 +17,7 @@
       </div>
     </section>
 
-    <Authenticator> 
+    <Authenticator v-slot="{user, signOut}"> 
       <template> 
         <button @click="signOut">Sign Out</button>
       </template>
