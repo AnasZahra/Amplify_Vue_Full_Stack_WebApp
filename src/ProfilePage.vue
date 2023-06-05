@@ -5,13 +5,14 @@
 
     <router-view />
 
-
+    <Authenticator/>
+    
     <section class="solid" id="login">
       <div>
-        <h1 class="Log_in_">Log in</h1>
+        <h1 class="Log_in">Log in</h1>
 
-        <input type="text" id="Rectangle_6" name="message1" placeholder="Write here..." class="Rectangle_6" /><br>
-        <input type="text" id="Rectangle_7" name="message1" placeholder="Write here..." class="Rectangle_7" /><br>
+        <input type="text" id="text1" name="message1" placeholder="Write here..." class="Rectangle_6" /><br>
+        <input type="text" id="text2" name="message1" placeholder="Write here..." class="Rectangle_7" /><br>
 
         <a href="#projects" class="main-btn-in">Log in</a>
       </div>
@@ -27,12 +28,14 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import {Authenticator} from "@aws-amplify/ui-vue";
 
 export default {
   name: "ProfilePage",
   components: {
     Header,
     Footer,
+    Authenticator,
   },
 };
 </script>
@@ -46,9 +49,10 @@ export default {
 
 <style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-@import url("./src/assets/base.css");
+@import "@/assets/base.css";
 
-.Log_in_ {
+
+.Log_in {
     left: 130px;
     top: 276px;
     position: absolute;
@@ -65,7 +69,7 @@ export default {
 
 
 
-#Rectangle_6 {
+#text1 {
     fill: transparent;
     stroke: rgba(146,143,150,1);
     stroke-width: 1px;
@@ -74,7 +78,7 @@ export default {
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_6 {
+.text1 {
     position: absolute;
     overflow: visible;
     width: 508px;
@@ -82,7 +86,7 @@ export default {
     left: 130px;
     top: 437px;
 }
-#Rectangle_7 {
+#text2 {
     fill: transparent;
     stroke: rgba(146,143,150,1);
     stroke-width: 1px;
@@ -91,7 +95,7 @@ export default {
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_7 {
+.text2 {
     position: absolute;
     overflow: visible;
     width: 508px;

@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-
+@import "@/assets/base.css";
 
 /* Add styles for your header component */
 </style>

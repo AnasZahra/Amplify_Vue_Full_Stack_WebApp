@@ -238,58 +238,6 @@ section{
 
 
 
-
-.mediaViewInfo {
-    --web-view-name: Web 1920 – 3;
-    --web-view-id: Web_1920__3;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-:root {
-    --web-view-ids: Web_1920__3;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-}
-#Web_1920__3 {
-    position: absolute;
-    width: 1920px;
-    height: 1535px;
-    background-color: rgba(35,32,42,1);
-    overflow: hidden;
-    --web-view-name: Web 1920 – 3;
-    --web-view-id: Web_1920__3;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-
-.main{
-    width: 100%;
-    min-height: 100vh ;
-    opacity: 100%;
-    display: flex;
-    align-items: center;
-    background:url(Mask_Group_1.png) no-repeat ;
-    background-size:cover ;
-    background-color: #000000;
-
-    background-position: left top;
-    background-attachment: fixed;
-}
-
-
-#Mask_Group_1 {
-    position: absolute;
-    width: 1942px;
-    height: 959px;
-    left: 949px;
-    top: 0px;
-    overflow: visible;
-}
-
 #Log_in_ {
     left: 130px;
     top: 276px;
@@ -323,72 +271,9 @@ section{
     left: 130px;
     top: 437px;
 }
-#Rectangle_7 {
-    fill: transparent;
-    stroke: rgba(146,143,150,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_7 {
-    position: absolute;
-    overflow: visible;
-    width: 508px;
-    height: 57px;
-    left: 130px;
-    top: 540px;
-}
-#Username {
-    opacity: 0.51;
-    left: 169px;
-    top: 455px;
-    position: absolute;
-    overflow: visible;
-    width: 89px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Visby CF;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    color: rgba(253,252,255,1);
-}
-#Password {
-    opacity: 0.51;
-    left: 169px;
-    top: 558px;
-    position: absolute;
-    overflow: visible;
-    width: 82px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Visby CF;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    color: rgba(253,252,255,1);
-}
-#Button {
-    position: absolute;
-    width: 508px;
-    height: 48px;
-    left: 130px;
-    top: 635px;
-    overflow: visible;
-}
-#Rectangle_2 {
-    fill: rgba(171,130,255,1);
-}
-.Rectangle_2 {
-    position: absolute;
-    overflow: visible;
-    width: 508px;
-    height: 48px;
-    left: 0px;
-    top: 0px;
-}
+
+
+
 
 #Log_in {
     left: 227px;
