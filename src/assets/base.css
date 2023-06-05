@@ -218,14 +218,6 @@ section{
 
   
 
-.authenticator-container {
-    position: absolute;
-    top: 50%; /* Adjust this value to position the component vertically */
-    left: 50%; /* Adjust this value to position the component horizontally */
-    transform: translate(-50%, -50%); /* Center the component using transform */
-    z-index: 9999; /* Set a high z-index to ensure it appears above other elements */
-  }
-  
 
 
 
