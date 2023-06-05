@@ -26,14 +26,14 @@
 
 
 <script>
-import Header from "@/components/Header.vue";
+
 import Footer from "@/components/Footer.vue";
 import {Authenticator} from "@aws-amplify/ui-vue"
 
 export default {
   name: "ProfilePage",
   components: {
-    Header,
+    
     Footer,
     Authenticator,
   },
