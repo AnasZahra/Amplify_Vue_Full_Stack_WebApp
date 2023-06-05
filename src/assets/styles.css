@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: 'Visby CF', sans-serif; 
+    margin: 0  ;
+    padding: 0;
+    box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+#Home {
+    background-color: #000000;
+    color: white;
+    padding: 200px 100px;
+  }
+  
+  #features {
+    background-color: #f4eeff;
+    color: #AB82FF;
+    padding: 200px 100px;
+  }
+  
+  #contact {
+    background-color: #AB82FF;
+    color: white;
+    padding: 200px 100px;
+  }
+  
+  #Profile {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 200px 100px;
+  }
+  
+  
+
+header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 100px;
+  backdrop-filter: blur(4px);
+}
+
+
+.logo{
+    text-decoration:none ;
+    color:#8665c7 ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font: weight 100; ;
+    font-size: 3em;
+
+}
+
+.navigation a{
+    color: #5f0fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 40px ;
+
+}
+.navigation a:hover{
+    color: #2e2938;
+}
+
+section{
+    padding: 200px 100px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh ;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    background:url(Mask_Group_1.png) no-repeat ;
+    background-size:cover ;
+    background-color: #000000;
+
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: white;
+    font-size: 6em;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-feature-settings: "smcp" on;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    
+}
+
+.main h2 span{
+   
+    color: white ;
+    display: inline- block;
+    font-size: 1em;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-feature-settings: "smcp" on;
+    letter-spacing: 1px;
+}
+
+
+.main h3{
+    color: white ;
+    font-size: 1.7em;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+
+.main-btn-up{
+    
+    color: white ;
+    background-color: rgb(163, 108, 214);
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.5375em 3.1875em;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    transition: 0.7s ease;
+   
+    
+
+}
+.main-btn-in{
+    
+    color: white ;
+    background-color: rgb(163, 108, 214);
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.5375em 3.1875em;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    margin-left: 50px;
+    transition: 0.7s ease;
+    
+
+
+
+}
+.social-icons a{ 
+    color: white;
+    font-size: 1.6em;
+    padding-right: 15px;
+    display: inline-block;
+    align-items: center;
+    padding-left: 70px;
+    margin-top: 10px;
+   
+}
+.main-btn-up:hover{
+    background-color: #5f0fff;
+    transform: scale(1.1,1.1);
+
+}
+.main-btn-in:hover{
+    background-color: #5f0fff;
+    transform: scale(1.1,1.1);
+}
+.titel{
+    display: flex;
+    justify-content: center;
+    color: #AB82FF;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #f4eeff;
+    width: 21.25em;
+    height: 15em;
+    /*box-shadow: 0 5px 25px rgba(1 1 1/ 15%);*/
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px;
+    transition: 1s ease;
+}
+.card:hover {
+    transform: scale(1.1,1.1);
+   
+}
+.icon{
+    color: #AB82FF;
+    font-size: 5em ;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #AB82FF;
+    font: size 1.2em; 
+    font-weight: 700;
+    margin: 10px;
+}
+.footer{
+    background-color: #AB82FF;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-title{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
