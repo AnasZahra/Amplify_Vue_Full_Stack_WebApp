@@ -2,11 +2,11 @@
 
   <header>
     <a href="#" class="logo">GymTimer</a>
-    <nav class="navigation">
-      <router-link to="/" class="nav-link">HOME</router-link>
-      <router-link to="/profile" class="nav-link">PROFILE</router-link>
-      <router-link to="/workout" class="nav-link">WORKOUT</router-link>
-    </nav>
+      <nav class="navigation">
+        <router-link to="/" class="nav-link">HOME</router-link>
+        <router-link to="/profile" class="nav-link">PROFILE</router-link>
+        <router-link to="/workout" class="nav-link">WORKOUT</router-link>
+      </nav>
   </header>
 </template>
 

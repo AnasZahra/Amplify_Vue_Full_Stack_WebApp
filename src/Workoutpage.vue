@@ -1,11 +1,5 @@
 <template>
   <div>
-  
-    <Header></Header>
-
-    <router-view />
-
-
     <section class="features" id="features">
 
     
@@ -93,9 +87,6 @@
         </div>
 
 
-        
-
-
       </div>
     </section>
 
@@ -105,13 +96,11 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Workoutpage",
   components: {
-    Header,
     Footer,
   },
   methods: {
@@ -134,8 +123,5 @@ export default {
 </script>
 
 <style src="./assets/base.css">
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-@import url("./src/assets/base.css"); */
 
-/* Add your additional styles here */
 </style>
