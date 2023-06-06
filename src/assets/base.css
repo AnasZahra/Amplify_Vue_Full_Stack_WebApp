@@ -68,8 +68,6 @@ section{
     align-items: center;
     background-size:cover ;
     background-color: #23202A;
-    background-position: left top;
-    background-attachment: fixed;
 }
 
 .main h2{
