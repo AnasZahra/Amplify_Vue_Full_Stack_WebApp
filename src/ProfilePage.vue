@@ -15,7 +15,11 @@
       </div>
     </section>
 
-    <Authenticator v-slot="{user, signOut}"> 
+    <Authenticator v-slot="{user, signOut}" 
+    
+    :login-mechanisms="['username']"> 
+
+      
       <template> 
         <button @click="signOut">Sign Out</button>
       </template>
