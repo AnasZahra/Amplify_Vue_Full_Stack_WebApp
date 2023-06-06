@@ -64,9 +64,9 @@ export default {
 </script>
 
 
-<style>
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-@import "@/assets/base.css";
+<style src="./assets/base.css">
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"); */
+/* @import "@/assets/base.css"; */
 
 /* Add your additional styles here */
 </style>

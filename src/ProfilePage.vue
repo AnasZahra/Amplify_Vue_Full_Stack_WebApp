@@ -15,9 +15,7 @@
       </div>
     </section>
 
-    <Authenticator v-slot="{user, signOut}" 
-    
-    :login-mechanisms="['username']"> 
+    <Authenticator v-slot="{signOut}" :login-mechanisms="['username']"> 
 
       
       <template> 
@@ -56,9 +54,9 @@ export default {
 
 
 
-<style>
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-@import url("./src/assets/base.css");
+<style src="./assets/base.css">
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("./src/assets/base.css"); */
 
 
 .Log_in {
