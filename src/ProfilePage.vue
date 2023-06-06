@@ -1,8 +1,6 @@
 <template>
   <div>
   
-    
-
     <router-view />
 
     
@@ -79,36 +77,20 @@ export default {
 #text1 {
     fill: transparent;
     stroke: rgba(146,143,150,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
     shape-rendering: auto;
 }
 .text1 {
-    position: absolute;
+    position: relative;
     overflow: visible;
-    width: 508px;
-    height: 57px;
-    left: 130px;
-    top: 437px;
 }
+
 #text2 {
     fill: transparent;
-    stroke: rgba(146,143,150,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
     shape-rendering: auto;
 }
 .text2 {
-    position: absolute;
+    position: relative;
     overflow: visible;
-    width: 508px;
-    height: 57px;
-    left: 130px;
-    top: 540px;
 }
 
 
