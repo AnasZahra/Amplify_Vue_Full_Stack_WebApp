@@ -2,12 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from '../App.vue'
 import ProfilePage from '../ProfilePage.vue'
 import WorkoutPage from '../Workoutpage.vue'
-
+import Home from '../Home.vue'
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: App
+    component: Home
   },
   {
     path: '/profile',

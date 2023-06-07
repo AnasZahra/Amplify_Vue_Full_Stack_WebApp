@@ -17,7 +17,7 @@
     
     
 
-    <Footer></Footer>
+    
 
   </div>
 </template>
