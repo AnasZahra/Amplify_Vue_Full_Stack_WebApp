@@ -5,12 +5,18 @@
 
   <div>
     
+    <section class="login" id="login">
+
+    	<h2 class="titel">Create your account</h2>
+
     <Authenticator :login-mechanisms="['email']" variation="modal" v-slot="{user, signOut}"> 
       <template> 
         <h3> {{ user.attributes.email}}</h3>
         <button @click="signOut">Sign Out</button>
       </template>
     </Authenticator>
+
+  </section>
   </div>
 </template>
 
@@ -34,13 +40,18 @@ export default {
 
 
 
-
-
-
-
 <style src="./assets/base.css">
 
 
+.solid{
+    width: 100%;
+    min-height: 100vh ;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    background-size:cover ;
+    background-color: #23202A;
+}
 
 .Log_in {
     left: 130px;

@@ -29,6 +29,7 @@ export default {
   scroll-behavior: smooth;
 }
 
+
 header{
     background-color: transparent;
     position: fixed;
@@ -38,7 +39,7 @@ header{
     justify-content:space-between ;
     align-items: center;
     padding: 26px 100px ;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     
 }
 
