@@ -5,7 +5,7 @@
 
   <div>
     
-    <Authenticator variation="modal" v-slot="{user, signOut}"> 
+    <Authenticator :login-mechanisms="['email']" variation="modal" v-slot="{user, signOut}"> 
       <template> 
         <h3> {{ user.attributes.email}}</h3>
         <button @click="signOut">Sign Out</button>
