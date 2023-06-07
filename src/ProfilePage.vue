@@ -1,24 +1,16 @@
 <template>
+  <!-- <section class="solid" id="login">
+
+    </section> -->
+
   <div>
-  
     
-
-    
-    <section class="solid" id="login">
-
-    </section>
-
-    <Authenticator v-slot="{user, signOut}"> 
+    <Authenticator variation="modal" v-slot="{user, signOut}"> 
       <template> 
         <h3> {{ user.attributes.email}}</h3>
         <button @click="signOut">Sign Out</button>
       </template>
     </Authenticator>
-    
-    
-
-    
-
   </div>
 </template>
 

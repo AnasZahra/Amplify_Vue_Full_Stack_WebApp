@@ -8,7 +8,7 @@
         <div>
           <h2>Your Workout.<br><span>Your Day.</span></h2>
           <h3>Get your daily dose of movement from home<br>or on the go with over 500 workouts for your level & goals.</h3>
-          <a href="#projects" class="main-btn-up">Create an account</a>
+          <a href="/profile" class="main-btn-up">Create an account</a>
           
         </div>
       </section>
