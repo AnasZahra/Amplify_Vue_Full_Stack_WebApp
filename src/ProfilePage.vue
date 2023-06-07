@@ -5,7 +5,7 @@
 
   <div>
     
-    <Authenticator :login-mechanisms="['email']" variation="modal" v-slot="{user, signOut}"> 
+    <Authenticator :sign-up-attributes="['email']" :login-mechanisms="['email']" variation="modal" v-slot="{user, signOut}"> 
       <template> 
         <h3> {{ user.attributes.email}}</h3>
         <button @click="signOut">Sign Out</button>
@@ -38,7 +38,7 @@ export default {
 
 
 
-<style src="./assets/base.css">
+<style>
 
 
 
@@ -57,5 +57,17 @@ export default {
     color: rgba(253,252,255,1);
 }
     
-
+.amplify-button--primary {
+background-color: #5f0fff;
+}
+.amplify-button--primary:hover {
+background-color: #a084d9;
+}
+.amplify-tabs-item[data-state=active]{
+  color:#5f0fff;
+  border-color: #5f0fff;
+}
+.amplify-tabs-item:hover{
+  color:#5f0fff;
+}
 </style>
