@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
   name: 'Header'
 }
 </script>
@@ -29,7 +30,6 @@ export default {
   scroll-behavior: smooth;
 }
 
-
 header{
     background-color: transparent;
     position: fixed;
@@ -39,13 +39,7 @@ header{
     justify-content:space-between ;
     align-items: center;
     padding: 26px 100px ;
-<<<<<<< Updated upstream
-    backdrop-filter: blur(3px);
-    
-=======
-    backdrop-filter: blur(4px);
 
->>>>>>> Stashed changes
 }
 
 .logo{

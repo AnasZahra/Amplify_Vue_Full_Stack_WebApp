@@ -4,19 +4,11 @@
     </section> -->
 
   <div>
-<<<<<<< Updated upstream
-    
-    <section class="login" id="login">
 
-    	<h2 class="titel">Create your account</h2>
-
-      <Authenticator :sign-up-attributes="['email']" :login-mechanisms="['email']" variation="modal" v-slot="{user, signOut}"> 
-      <template> 
-=======
-
+<section>
     <Authenticator :sign-up-attributes="['email']" :login-mechanisms="['email']" variation="modal" v-slot="{user, signOut}">
       <template>
->>>>>>> Stashed changes
+
         <h3> {{ user.attributes.email}}</h3>
         <button @click="signOut">Sign Out</button>
       </template>
@@ -39,12 +31,7 @@ export default {
 }
 </script>
 
-<<<<<<< Updated upstream
-
-
-
 <style>
-
 
 .solid{
     width: 100%;
@@ -56,10 +43,6 @@ export default {
     background-color: #23202A;
 }
 
-=======
-<style>
-
->>>>>>> Stashed changes
 .Log_in {
     left: 130px;
     top: 276px;
@@ -82,15 +65,12 @@ export default {
 .amplify-tabs-item:hover{
   color:#5f0fff;
 }
-<<<<<<< Updated upstream
-    
-=======
+
 .amplify-button[data-variation= primary]{
   background-color: #5f0fff;
 }
 .amplify-button:hover[data-variation= primary]{
   background-color: #a084d9;
 }
->>>>>>> Stashed changes
 
 </style>

@@ -16,6 +16,6 @@ module.exports = {
     'vue'
   ],
   rules: {
-    semi: ["always"]
+    // semi: ["always"]
   }
 }

@@ -1,10 +1,6 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div>
-<<<<<<< Updated upstream
-      
-=======
-      <Header></Header>
->>>>>>> Stashed changes
 
       <router-view />
 
