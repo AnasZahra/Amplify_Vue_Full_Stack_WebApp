@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@aws-amplify/ui-vue": "^3.1.18",
-    "aws-amplify": "^5.2.4",
+    "aws-amplify": "^5.2.7",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
   "devDependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^3.2.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/test-utils": "^2.3.2",
     "eslint": "^8.42.0",

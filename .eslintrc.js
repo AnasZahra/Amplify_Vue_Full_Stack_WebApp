@@ -6,7 +6,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-essential',
-    'standard'
+    'standard',
+    'plugin:@eslint-community/eslint-comments/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -17,5 +18,6 @@ module.exports = {
   ],
   rules: {
     // semi: ["always"]
+    '@eslint-community/eslint-comments/no-unused-disable': 'error'
   }
 }
