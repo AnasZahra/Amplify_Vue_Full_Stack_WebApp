@@ -15,8 +15,8 @@
 
 <script>
 export default {
-  name: 'Footer',
-};
+  name: 'Footer'
+}
 </script>
 
 <style>
@@ -33,7 +33,7 @@ export default {
 }
 .info h3{
     color: #AB82FF;
-    font: size 1.2em; 
+    font: size 1.2em;
     font-weight: 700;
     margin: 10px;
 }

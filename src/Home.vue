@@ -1,18 +1,22 @@
 <template>
     <div>
+<<<<<<< Updated upstream
       
+=======
+      <Header></Header>
+>>>>>>> Stashed changes
 
       <router-view />
-  
+
       <section class="main" id="Home">
         <div>
           <h2>Your Workout.<br><span>Your Day.</span></h2>
           <h3>Get your daily dose of movement from home<br>or on the go with over 500 workouts for your level & goals.</h3>
           <a href="/profile" class="main-btn-up">Create an account</a>
-          
+
         </div>
       </section>
-  
+
       <section class="features" id="features">
         <h2 class="titel">improve your own workout plan with GymTimer</h2>
         <div class="content">
@@ -45,7 +49,7 @@
           </div>
         </div>
       </section>
-  
+
       <Footer></Footer>
     </div>
-  </template>
+     </template>

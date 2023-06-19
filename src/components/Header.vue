@@ -12,8 +12,8 @@
 
 <script>
 export default {
-  name: 'Header',
-};
+  name: 'Header'
+}
 </script>
 
 <style>
@@ -39,8 +39,13 @@ header{
     justify-content:space-between ;
     align-items: center;
     padding: 26px 100px ;
+<<<<<<< Updated upstream
     backdrop-filter: blur(3px);
     
+=======
+    backdrop-filter: blur(4px);
+
+>>>>>>> Stashed changes
 }
 
 .logo{
