@@ -1,11 +1,18 @@
 /* eslint-disable no-undef */
 // eslint-disable-next-line no-undef
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents () {
+    setupNodeEvents() {
       // implement node event listeners here
-    }
-  }
-})
+    },
+  },
+
+  component: {
+    devServer: {
+      framework: "vue",
+      bundler: "vite",
+    },
+  },
+});
