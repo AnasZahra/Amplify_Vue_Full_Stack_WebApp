@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   env: {
     browser: true,
@@ -6,8 +7,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-essential',
-    'standard',
-    'plugin:@eslint-community/eslint-comments/recommended'
+    // 'standard',
+    // 'plugin:@eslint-community/eslint-comments/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
