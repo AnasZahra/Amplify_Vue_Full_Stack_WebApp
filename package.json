@@ -19,6 +19,7 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^3.2.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/test-utils": "^2.3.2",
+    "cypress": "^12.16.0",
     "eslint": "^8.42.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",

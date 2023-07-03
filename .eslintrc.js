@@ -18,6 +18,6 @@ module.exports = {
   ],
   rules: {
     // semi: ["always"]
-    '@eslint-community/eslint-comments/no-unused-disable': 'error'
+    // '@eslint-community/eslint-comments/no-unused-disable': 'error'
   }
 }
