@@ -1,0 +1,12 @@
+{
+    "testFiles": "**/*.*",
+    "watchForFileChanges": true,
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
+    "experimentalComponentTesting": true,
+    "componentFolder": "src/components",
+    "video": false,
+    "integrationFolder": "cypress/integration",
+    "testRunner": "mocha"
+  }
+  
