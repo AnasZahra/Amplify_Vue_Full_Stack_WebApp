@@ -5,7 +5,7 @@ frontend:
     build:
       - npx run build
   artifacts:
-    baseDirectory: public
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
@@ -24,4 +24,4 @@ test:
     files:
       - '**/*.mp4'
       - 'testConfig.html'
-      - 'assets/**'
+      - 'assets/**'   
