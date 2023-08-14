@@ -11,7 +11,7 @@ module.exports = defineConfig({
     },
   },
 
-  component: {
+  component: {  
     devServer: {
       framework: "vue",
       bundler: "vite",
