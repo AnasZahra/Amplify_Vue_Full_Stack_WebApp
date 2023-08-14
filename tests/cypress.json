@@ -1,8 +1,8 @@
 {
     "testFiles": "**/*.*",
     "watchForFileChanges": true,
-    "pluginsFile": "cypress/plugins/index1.js",
-    "supportFile": "cypress/support/index1.js",
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
     "experimentalComponentTesting": true,
     "componentFolder": "src/components",
     "video": false,
