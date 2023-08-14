@@ -24,4 +24,4 @@ test:
     files:
       - '**/*.mp4'
       - 'testConfig.html'
-      - 'assets/**'   
+      - 'assets/**'
