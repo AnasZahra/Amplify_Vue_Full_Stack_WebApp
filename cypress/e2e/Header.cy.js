@@ -24,6 +24,6 @@ describe('Header Component', () => {
       // Click on "HOME" link
       cy.contains('HOME').click()
       cy.url().should('equal', 'https://main.d2ytiu1ieg4x8w.amplifyapp.com/') // Change to your home URL
-    })
+    }) 
   })
   
