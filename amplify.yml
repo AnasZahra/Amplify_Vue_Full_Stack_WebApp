@@ -1,0 +1,27 @@
+frontend:
+  phases:
+    preBuild:
+      - npm install
+    build:
+      - npx run build
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths:
+    - node_modules/**/*
+test:
+  phases:
+    
+    test:
+      commands:
+        - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
+    
+  artifacts:
+    baseDirectory: cypress
+    configFilePath: testConfig.json
+    files:
+      - '**/*.mp4'
+      - 'testConfig.html'
+      - 'assets/**'
