@@ -1,7 +1,7 @@
 
 /// <reference types="cypress" /> 
 
-describe('Header Component', () => {  
+describe('Header Component', () => {   
     it('Navigates to different routes', () => {
       cy.visit('https://main.d2lrktgk8dd87c.amplifyapp.com/') // Change to your app's URL
   
