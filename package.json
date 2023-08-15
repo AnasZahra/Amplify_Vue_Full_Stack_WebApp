@@ -9,7 +9,7 @@
     "test:unit": "vitest",
     "serve": "vue-cli-service serve"
   },
-  "dependencies": { 
+  "dependencies": {  
     "@aws-amplify/ui-vue": "^3.1.18",
     "aws-amplify": "^5.2.7",
     "vue": "^3.3.2",
