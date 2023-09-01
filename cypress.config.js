@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-undef
 const { defineConfig } = require("cypress");
 
-module.exports = defineConfig({   
+module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
     setupNodeEvents(on) {

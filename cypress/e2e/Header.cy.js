@@ -1,14 +1,9 @@
-
-/// <reference types="cypress" /> 
-
-
-describe('Header Component', () => {  
-
+describe('Header Component', () => {
     it('Navigates to different routes', () => {
-      cy.visit('https://main.d2lrktgk8dd87c.amplifyapp.com/') // Change to your app's URL
+      cy.visit('/') // Change to your app's URL
   
       // Click on "PROFILE" link
-      cy.contains('PROFILE').click()   
+      cy.contains('PROFILE').click()
       cy.url().should('include', '/profile')
   
       // Go back to the home page
@@ -25,7 +20,7 @@ describe('Header Component', () => {
   
       // Click on "HOME" link
       cy.contains('HOME').click()
-      cy.url().should('equal', 'https://main.d2lrktgk8dd87c.amplifyapp.com/') // Change to your home URL
-    }) 
+      cy.url().should('equal', Cypress.config().baseUrl) // Change to your home URL
+    })
   })
   
