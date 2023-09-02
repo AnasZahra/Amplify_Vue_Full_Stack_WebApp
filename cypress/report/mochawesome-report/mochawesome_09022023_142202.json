@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-02T12:21:57.315Z",
+    "end": "2023-09-02T12:22:02.975Z",
+    "duration": 5660,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c2d6888-b13e-4621-abf9-c9317df57d27",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Header.cy.js",
+      "file": "cypress\\e2e\\Header.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "250c9b29-fb10-43dc-9be9-b54f2a7fe85c",
+          "title": "Header Component",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigates to different routes",
+              "fullTitle": "Header Component Navigates to different routes",
+              "timedOut": null,
+              "duration": 2880,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://main.d2lrktgk8dd87c.amplifyapp.com/'); // Change to your app's URL\n// Click on \"PROFILE\" link\ncy.contains('PROFILE').click();\ncy.url().should('include', '/profile');\n// Go back to the home page\ncy.go('back');\ncy.url().should('not.include', '/profile');\n// Click on \"WORKOUT\" link\ncy.contains('WORKOUT').click();\ncy.url().should('include', '/workout');\n// Go back to the home page\ncy.go('back');\ncy.url().should('not.include', '/workout');\n// Click on \"HOME\" link\ncy.contains('HOME').click();\ncy.url().should('equal', 'https://main.d2lrktgk8dd87c.amplifyapp.com/'); // Change to your home URL",
+              "err": {},
+              "uuid": "29665fda-0e9f-42f2-b0fd-b0c0550ece7e",
+              "parentUUID": "250c9b29-fb10-43dc-9be9-b54f2a7fe85c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "29665fda-0e9f-42f2-b0fd-b0c0550ece7e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2880,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

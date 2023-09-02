@@ -7,6 +7,14 @@
     "componentFolder": "src/components",
     "video": false,
     "integrationFolder": "cypress/integration",
-    "testRunner": "mocha"
+    "testRunner": "mocha",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/report/mochawesome-report/.jsons",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+    }
   }
   
