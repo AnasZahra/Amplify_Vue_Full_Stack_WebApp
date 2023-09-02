@@ -1,6 +1,8 @@
+//const cypress = require("cypress")
+
 describe('Header Component', () => {
     it('Navigates to different routes', () => {
-      cy.visit('/') // Change to your app's URL
+      cy.visit('https://main.d2lrktgk8dd87c.amplifyapp.com/') // Change to your app's URL
   
       // Click on "PROFILE" link
       cy.contains('PROFILE').click()
@@ -20,7 +22,7 @@ describe('Header Component', () => {
   
       // Click on "HOME" link
       cy.contains('HOME').click()
-      cy.url().should('equal', Cypress.config().baseUrl) // Change to your home URL
+      cy.url().should('equal', 'https://main.d2lrktgk8dd87c.amplifyapp.com/') // Change to your home URL
     })
   })
   
