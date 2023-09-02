@@ -1,4 +1,5 @@
-//const cypress = require("cypress")
+/// <reference types="cypress" />
+
 
 describe('Header Component', () => {     
     it('Navigates to different routes', () => {
