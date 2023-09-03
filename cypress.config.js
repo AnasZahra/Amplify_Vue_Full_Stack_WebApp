@@ -1,24 +1,29 @@
-/* eslint-disable no-undef */
-// eslint-disable-next-line no-undef
 const { defineConfig } = require("cypress");
 
-module.exports = defineConfig({ 
-  reporter: 'cypress-mochawesome-reporter',
-  e2e: { 
-    setupNodeEvents(on) {
-      require('cypress-mochawesome-reporter/plugin')(on);
+module.exports = defineConfig({
+  watchForFileChanges: true,
+  video: false,
+  testRunner: "mocha",
+  reporter: "cypress-mochawesome-reporter",
+
+  reporterOptions: {
+    reportDir: "cypress/report/mochawesome-report",
+    overwrite: false,
+    html: false,
+    json: true,
+    timestamp: "mmddyyyy_HHMMss",
+  },
+
+  component: {
+    setupNodeEvents(on, config) {},
+    specPattern: "src/components/**/*.*",
+  },
+
+  e2e: {
+    setupNodeEvents(on, config) {
       // implement node event listeners here
-      // on('before:run', async (details) => {
-      //   console.log('override before:run');
-      //   await beforeRunHook(details);
-      // }),
-      // on('after:run', async () => {
-      //   console.log('override after:run');
-      //   await afterRunHook();
-      // })
     },
   },
-  
 
   component: {
     devServer: {
@@ -26,5 +31,4 @@ module.exports = defineConfig({
       bundler: "vite",
     },
   },
-  
 });

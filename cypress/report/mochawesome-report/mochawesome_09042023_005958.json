@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-09-03T22:12:21.554Z",
-    "end": "2023-09-03T22:12:26.830Z",
-    "duration": 5276,
+    "start": "2023-09-03T22:59:54.460Z",
+    "end": "2023-09-03T22:59:58.810Z",
+    "duration": 4350,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ad948a03-04eb-4922-b280-a0197fe66e0a",
+      "uuid": "c7af1af9-f8b0-41be-ae9c-9f134007215b",
       "title": "",
       "fullFile": "cypress\\e2e\\Header.cy.js",
       "file": "cypress\\e2e\\Header.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "423d7a44-444a-4f35-aa4e-7a77eee7e5aa",
+          "uuid": "2dfc687c-05a9-4f0a-9999-05193f1bae18",
           "title": "Header Component",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Navigates to different routes",
               "fullTitle": "Header Component Navigates to different routes",
               "timedOut": null,
-              "duration": 2705,
+              "duration": 2561,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://main.d2lrktgk8dd87c.amplifyapp.com/'); // Change to your app's URL\n// Click on \"PROFILE\" link\ncy.contains('PROFILE').click();\ncy.url().should('include', '/profile');\n// Go back to the home page\ncy.go('back');\ncy.url().should('not.include', '/profile');\n// Click on \"WORKOUT\" link\ncy.contains('WORKOUT').click();\ncy.url().should('include', '/workout');\n// Go back to the home page\ncy.go('back');\ncy.url().should('not.include', '/workout');\n// Click on \"HOME\" link\ncy.contains('HOME').click();\ncy.url().should('equal', 'https://main.d2lrktgk8dd87c.amplifyapp.com/'); // Change to your home URL",
               "err": {},
-              "uuid": "6e93d69e-8cea-4334-9c61-d3275b510a18",
-              "parentUUID": "423d7a44-444a-4f35-aa4e-7a77eee7e5aa",
+              "uuid": "00d44c61-f334-42b8-816b-136be3515b4c",
+              "parentUUID": "2dfc687c-05a9-4f0a-9999-05193f1bae18",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6e93d69e-8cea-4334-9c61-d3275b510a18"
+            "00d44c61-f334-42b8-816b-136be3515b4c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2705,
+          "duration": 2561,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
