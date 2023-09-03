@@ -8,8 +8,17 @@ module.exports = defineConfig({
     setupNodeEvents(on) {
       require('cypress-mochawesome-reporter/plugin')(on);
       // implement node event listeners here
+      on('before:run', async (details) => {
+        console.log('override before:run');
+        await beforeRunHook(details);
+      }),
+      on('after:run', async () => {
+        console.log('override after:run');
+        await afterRunHook();
+      })
     },
   },
+  
 
   component: {
     devServer: {
@@ -17,4 +26,5 @@ module.exports = defineConfig({
       bundler: "vite",
     },
   },
+  
 });
