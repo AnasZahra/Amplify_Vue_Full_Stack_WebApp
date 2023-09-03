@@ -19,7 +19,7 @@
     "vue-router": "^4.2.0",
     "wait-on": "^7.0.1"
   },
-  "devDependencies": { 
+  "devDependencies": {  
     "@eslint-community/eslint-plugin-eslint-comments": "^3.2.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/test-utils": "^2.3.2",
