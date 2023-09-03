@@ -8,7 +8,7 @@
     "video": false,
     "integrationFolder": "cypress/integration",
     "testRunner": "mocha",
-    "reporter": "mochawesome",
+    "reporter": "cypress-mochawesome-reporter",
     "reporterOptions": {
       "reportDir": "cypress/report/mochawesome-report/.jsons",
       "overwrite": false,
