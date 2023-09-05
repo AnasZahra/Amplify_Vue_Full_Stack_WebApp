@@ -15,11 +15,12 @@
     "aws-amplify": "^5.2.7",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0",
+    "primevue": "^3.34.0",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0",
     "wait-on": "^7.0.1"
   },
-  "devDependencies": {  
+  "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^3.2.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/test-utils": "^2.3.2",
