@@ -9,11 +9,11 @@
 
         
         <el-table :data="filterTableData" style="width: 100%">
-            <el-table-column label="Day" prop="day" />
-            <el-table-column label="Training-part" prop="bodypart" />
-            <el-table-column label="Name" prop="name" />
-            <el-table-column label="address" prop="address" />
-            <el-table-column label="address" prop="address" />
+          <el-table-column label="Day" prop="day" />
+  <el-table-column label="Training-part" prop="bodypart" />
+  <el-table-column label="Name" prop="name" />
+  <el-table-column label="Address" prop="address" /> <!-- Corrected "address" -->
+  <el-table-column label="Sets" prop="sets" />
             <el-table-column :align="'right'">
                 <template #header>
                     <el-input v-model="search" size="small" placeholder="Type to search" />
@@ -38,11 +38,12 @@
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
+import { User } from '@/path/to/user.interface'; // Replace with the correct path
 
 interface User {
   day: string
   bodypart: string
-  address: string
+  sets: string 
 }
 
 const search = ref('')
@@ -64,40 +65,40 @@ const tableData: User[] = [
   {
     day: 'Montag',
     bodypart: 'Arms',
-    address: '',
+    address: 'a',
   },
   {
     day: 'Dienstag',
     bodypart: 'Back',
-    address: '',
+    address: 'a',
   },
   {
     day: 'Mittwoch',
     bodypart: 'Chest',
-    address: '',
+    address: 'a',
   },
   {
     day: 'Donnerstag',
     bodypart: 'REST-DAY',
-    address: '',
+    address: 'a',
   },
 
   {
     day: 'Freitag',
     bodypart: 'REST-DAY',
-    address: '',
+    address: 'a',
   },
 
   {
     day: 'Samstag',
     bodypart: 'Legs',
-    address: '',
+    address: 'a',
   },
 
   {
     day: 'Sonntag',
     bodypart: 'ABS',
-    address: '',
+    address: 'a',
   },
 ]
 </script>

@@ -1,6 +1,8 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/lib/theme-chalk/index.css'
 
 export default defineConfig({
   plugins: [vue()],

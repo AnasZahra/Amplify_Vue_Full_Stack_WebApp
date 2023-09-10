@@ -3,8 +3,7 @@ import App from './App.vue'
 import router from './router'
 import awsConfig from './aws-exports'
 import { Auth } from 'aws-amplify'
-import "primevue/resources/themes/lara-light-indigo/theme.css";
-import PrimeVue from 'primevue/config';
+
 
 import '@aws-amplify/ui-vue/styles.css'
 import './assets/base.css'
