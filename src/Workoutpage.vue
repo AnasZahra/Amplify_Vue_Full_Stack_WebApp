@@ -1,99 +1,106 @@
 <template>
+     
 
-<section class="features" id="features">
-          <div>
+     <section class="features" id="features">
+            <div>
+                <a href="/profile" class="main-btn-up">Create an account</a>
+            </div>
+        </section>
 
-            <a href="/profile" class="main-btn-up">Create an account</a>
-  
-          </div>
-  </section>
-
-  <div>
-
-  <DataTable v-model:editingRows="editingRows" :value="products" editMode="row" dataKey="id"
-        @row-edit-save="onRowEditSave" tableClass="editable-cells-table" tableStyle="min-width: 50rem">
-    <Column field="Day" header="Day" style="width: 20%">
-        <template #editor="{ data, field }">
-            <InputText v-model="data[field]" />
-        </template>
-    </Column>
-    <Column field="Workout part" header="Workout part" style="width: 20%">
-        <template #editor="{ data, field }">
-            <InputText v-model="data[field]" />
-        </template>
-    </Column>
-    <Column field="Time of the day" header="Time of the day" style="width: 20%">
-        <template #editor="{ data, field }">
-            <Dropdown v-model="data[field]" :options="statuses" optionLabel="label" optionValue="value" placeholder="Select a Status">
-                <template #option="slotProps">
-                    <Tag :value="slotProps.option.value" :severity="getStatusLabel(slotProps.option.value)" />
+        
+        <el-table :data="filterTableData" style="width: 100%">
+            <el-table-column label="Day" prop="day" />
+            <el-table-column label="Training-part" prop="bodypart" />
+            <el-table-column label="Name" prop="name" />
+            <el-table-column label="address" prop="address" />
+            <el-table-column label="address" prop="address" />
+            <el-table-column :align="'right'">
+                <template #header>
+                    <el-input v-model="search" size="small" placeholder="Type to search" />
                 </template>
-            </Dropdown>
-        </template>
-        <template #body="slotProps">
-            <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
-        </template>
-    </Column>
-    <Column field="price" header="Price" style="width: 20%">
-        <template #body="{ data, field }">
-            {{ formatCurrency(data[field]) }}
-        </template>
-        <template #editor="{ data, field }">
-            <InputNumber v-model="data[field]" mode="currency" currency="USD" locale="en-US" />
-        </template>
-    </Column>
-    <Column :rowEditor="true" style="width: 10%; min-width: 8rem" bodyStyle="text-align:center"></Column>
-  </DataTable>
-</div>
+            <template #default="scope">
+                <el-button size="small" @click="handleEdit(scope.$index, scope.row)"
+                    >Edit</el-button
+            >
+        <el-button
+          size="small"
+          type="danger"
+          @click="handleDelete(scope.$index, scope.row)"
+          >Delete</el-button
+        >
+      </template>
+    </el-table-column>
+  </el-table>
+
 </template>
 
-<script>
 
-import { ProductService } from '@/service/ProductService';
-export default {
-    data() {
-        return {
-            products: null,
-            editingRows: [],
-            statuses: [
-                { label: 'Morning', value: 'Morning' },
-                { label: 'Mid-day', value: 'Mid-day' },
-                { label: 'Evening', value: 'Evening' }
-            ]
-        };
-    },
-    mounted() {
-        ProductService.getWorkoutPlanMini().then((data) => (this.products = data));
-    },
-    methods: {
-        onRowEditSave(event) {
-            let { newData, index } = event;
 
-            this.products[index] = newData;
-        },
-        getStatusLabel(status) {
-            switch (status) {
-                case 'INSTOCK':
-                    return 'success';
+<script lang="ts" setup>
+import { computed, ref } from 'vue'
 
-                case 'LOWSTOCK':
-                    return 'warning';
+interface User {
+  day: string
+  bodypart: string
+  address: string
+}
 
-                case 'OUTOFSTOCK':
-                    return 'danger';
+const search = ref('')
+const filterTableData = computed(() =>
+  tableData.filter(
+    (data) =>
+      !search.value ||
+      data.name.toLowerCase().includes(search.value.toLowerCase())
+  )
+)
+const handleEdit = (index: number, row: User) => {
+  console.log(index, row)
+}
+const handleDelete = (index: number, row: User) => {
+  console.log(index, row)
+}
 
-                default:
-                    return null;
-            }
-        },
-        formatCurrency(value) {
-            return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
-        }
-    }
-};
+const tableData: User[] = [
+  {
+    day: 'Montag',
+    bodypart: 'Arms',
+    address: '',
+  },
+  {
+    day: 'Dienstag',
+    bodypart: 'Back',
+    address: '',
+  },
+  {
+    day: 'Mittwoch',
+    bodypart: 'Chest',
+    address: '',
+  },
+  {
+    day: 'Donnerstag',
+    bodypart: 'REST-DAY',
+    address: '',
+  },
 
+  {
+    day: 'Freitag',
+    bodypart: 'REST-DAY',
+    address: '',
+  },
+
+  {
+    day: 'Samstag',
+    bodypart: 'Legs',
+    address: '',
+  },
+
+  {
+    day: 'Sonntag',
+    bodypart: 'ABS',
+    address: '',
+  },
+]
 </script>
-
 
 
 
